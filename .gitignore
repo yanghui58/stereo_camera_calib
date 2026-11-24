@@ -1,0 +1,17 @@
+# MATLAB 自动备份与临时文件
+*.asv
+*.m~
+*.mex*
+slprj/
+
+# 拼接图自动裁切缓存
+_split_cache/
+**/_split_cache/
+
+# 本地生成的测试数据与标定输出（GUI 内可一键重新生成）
+demo_data/
+demo_output/
+
+# 系统文件
+.DS_Store
+Thumbs.db
