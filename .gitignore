@@ -8,18 +8,15 @@ slprj/
 _split_cache/
 **/_split_cache/
 
-# 本地生成的测试数据、实拍图像与标定输出
+# 本地生成的测试图像与实拍大容量原图目录
 demo_data/
-demo_output/
 capture_data/
 立体标定图片/
 
-# 第三方相机驱动安装包与手册大文件
-2019.10.17/
+# 超过 50MB 的大型驱动压缩包与安装程序 (避免触发 GitHub 大文件限制)
 *.zip
-*.exe
-*.pdf
-*.mlpkginstall
+usbVideo_setup_*.exe
+**/usbVideo_setup_*.exe
 
 # 系统文件
 .DS_Store
