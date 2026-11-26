@@ -1,23 +1,10 @@
-# MATLAB 自动备份与临时文件
+# MATLAB 自动备份与临时缓存
 *.asv
 *.m~
-*.mex*
 slprj/
-
-# 拼接图自动裁切缓存
 _split_cache/
 **/_split_cache/
 
-# 本地生成的测试图像与实拍大容量原图目录
-demo_data/
-capture_data/
-立体标定图片/
-
-# 超过 50MB 的大型驱动压缩包与安装程序 (避免触发 GitHub 大文件限制)
-*.zip
-usbVideo_setup_*.exe
-**/usbVideo_setup_*.exe
-
-# 系统文件
+# 系统临时文件
 .DS_Store
 Thumbs.db
