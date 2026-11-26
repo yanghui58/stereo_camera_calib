@@ -92,6 +92,12 @@ classdef StereoCalibApp < handle
             app.buildUI();
             app.setStatus('就绪：请加载左右图像文件夹，或点击「生成测试数据」快速体验。');
         end
+
+        function loadStereoFolders(app, leftDir, rightDir)
+        % 供外部程序 (如 StereoCaptureApp) 一键导入拍好的左右图像目录
+            [lFiles, rFiles, info] = stereo.loadImagePairs('separate', leftDir, rightDir);
+            app.initDataset(lFiles, rFiles, info.imageSize, info.message);
+        end
     end
 
     methods (Access = private)

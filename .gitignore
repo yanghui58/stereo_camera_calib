@@ -8,9 +8,18 @@ slprj/
 _split_cache/
 **/_split_cache/
 
-# 本地生成的测试数据与标定输出（GUI 内可一键重新生成）
+# 本地生成的测试数据、实拍图像与标定输出
 demo_data/
 demo_output/
+capture_data/
+立体标定图片/
+
+# 第三方相机驱动安装包与手册大文件
+2019.10.17/
+*.zip
+*.exe
+*.pdf
+*.mlpkginstall
 
 # 系统文件
 .DS_Store
